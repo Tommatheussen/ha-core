@@ -133,11 +133,6 @@ async def _async_validate_zone_temperature_sensor(
 class SatelConfigFlow(ConfigFlow, domain=DOMAIN):
     """Handle a Satel Integra config flow."""
 
-    def __init__(self) -> None:
-        """Initialize the config flow."""
-        super().__init__()
-        self.connection_data: dict[str, Any] = {}
-
     VERSION = 2
     MINOR_VERSION = 3
 
