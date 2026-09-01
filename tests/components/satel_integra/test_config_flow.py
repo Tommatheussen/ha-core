@@ -28,6 +28,7 @@ from homeassistant.config_entries import (
     SOURCE_USER,
     ConfigEntryState,
     ConfigSubentry,
+    FlowType,
 )
 from homeassistant.const import CONF_CODE, CONF_HOST, CONF_NAME, CONF_PORT
 from homeassistant.core import HomeAssistant
@@ -90,17 +91,18 @@ async def test_setup_flow(
         result["flow_id"],
         user_input_connection,
     )
-    assert result["type"] is FlowResultType.FORM
-    assert result["step_id"] == "code"
-
-    result = await hass.config_entries.flow.async_configure(
-        result["flow_id"],
-        user_input_code,
-    )
     assert result["type"] is FlowResultType.CREATE_ENTRY
     assert result["title"] == MOCK_CONFIG_DATA[CONF_HOST]
     assert result["data"] == entry_data
-    assert result["options"] == entry_options
+    assert result["options"] == {}
+    assert result["next_flow"][0] is FlowType.OPTIONS_FLOW
+
+    result = await hass.config_entries.options.async_configure(
+        result["next_flow"][1],
+        user_input_code,
+    )
+    assert result["type"] is FlowResultType.CREATE_ENTRY
+    assert result["data"] == entry_options
 
     assert len(mock_setup_entry.mock_calls) == 1
 
@@ -145,11 +147,11 @@ async def test_setup_connection_failed(
         user_input,
     )
 
-    assert result["type"] is FlowResultType.FORM
-    assert result["step_id"] == "code"
+    assert result["type"] is FlowResultType.CREATE_ENTRY
+    assert result["next_flow"][0] is FlowType.OPTIONS_FLOW
 
-    result = await hass.config_entries.flow.async_configure(
-        result["flow_id"],
+    result = await hass.config_entries.options.async_configure(
+        result["next_flow"][1],
         {},
     )
 
