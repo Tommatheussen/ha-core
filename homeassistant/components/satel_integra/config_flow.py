@@ -19,6 +19,7 @@ from homeassistant.config_entries import (
     ConfigFlow,
     ConfigFlowResult,
     ConfigSubentryFlow,
+    FlowType,
     OptionsFlow,
     SubentryFlowResult,
 )
@@ -180,12 +181,14 @@ class SatelConfigFlow(ConfigFlow, domain=DOMAIN):
             )
 
             if not errors:
-                self.connection_data = {
-                    CONF_HOST: user_input[CONF_HOST],
-                    CONF_PORT: user_input[CONF_PORT],
-                    CONF_ENCRYPTION_KEY: user_input.get(CONF_ENCRYPTION_KEY),
-                }
-                return await self.async_step_code()
+                return self.async_create_entry(
+                    title=user_input[CONF_HOST],
+                    data={
+                        CONF_HOST: user_input[CONF_HOST],
+                        CONF_PORT: user_input[CONF_PORT],
+                        CONF_ENCRYPTION_KEY: user_input.get(CONF_ENCRYPTION_KEY),
+                    },
+                )
 
         return self.async_show_form(
             step_id="user",
@@ -193,21 +196,14 @@ class SatelConfigFlow(ConfigFlow, domain=DOMAIN):
             errors=errors,
         )
 
-    async def async_step_code(
-        self, user_input: dict[str, Any] | None = None
-    ) -> ConfigFlowResult:
-        """Handle code configuration."""
-        if user_input is not None:
-            return self.async_create_entry(
-                title=self.connection_data[CONF_HOST],
-                data=self.connection_data,
-                options={CONF_CODE: user_input.get(CONF_CODE)},
-            )
-
-        return self.async_show_form(
-            step_id="code",
-            data_schema=CODE_SCHEMA,
+    @override
+    async def async_on_create_entry(self, result: ConfigFlowResult) -> ConfigFlowResult:
+        """Start the options flow after creating the config entry."""
+        options_result = await self.hass.config_entries.options.async_init(
+            result["result"].entry_id,
         )
+        result["next_flow"] = (FlowType.OPTIONS_FLOW, options_result["flow_id"])
+        return result
 
     async def async_step_reconfigure(
         self, user_input: dict[str, Any] | None = None
