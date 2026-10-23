@@ -65,6 +65,7 @@ OPTIONS_SCHEMA = probatio.Schema(
     {
         probatio.Optional(CONF_CODE): probatio.All(
             cv.string,
+            probatio.Match(r"^[0-9]+\Z", msg="invalid_code_format"),
             probatio.Length(min=4, max=16, msg="invalid_code_length"),
         ),
     }
