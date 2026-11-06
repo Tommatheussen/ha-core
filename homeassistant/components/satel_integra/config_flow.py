@@ -14,6 +14,7 @@ from satel_integra.exceptions import (
 
 from homeassistant.components.binary_sensor import BinarySensorDeviceClass
 from homeassistant.config_entries import (
+    SOURCE_USER,
     ConfigEntryState,
     ConfigFlow,
     ConfigFlowResult,
@@ -146,6 +147,8 @@ class SatelConfigFlow(ConfigFlow, domain=DOMAIN):
     VERSION = 2
     MINOR_VERSION = 3
 
+    _model_name: str | None = None
+
     @staticmethod
     @callback
     @override
@@ -187,7 +190,7 @@ class SatelConfigFlow(ConfigFlow, domain=DOMAIN):
 
             if not errors:
                 return self.async_create_entry(
-                    title=user_input[CONF_HOST],
+                    title=self._model_name or user_input[CONF_HOST],
                     data={
                         CONF_HOST: user_input[CONF_HOST],
                         CONF_PORT: user_input[CONF_PORT],
@@ -265,10 +268,15 @@ class SatelConfigFlow(ConfigFlow, domain=DOMAIN):
     ) -> dict[str, str]:
         """Test a connection to the Satel alarm."""
         errors: dict[str, str] = {}
+        self._model_name = None
         controller = AsyncSatel(host, port, integration_key=integration_key)
 
         try:
             await controller.connect(raise_exceptions=True)
+            if self.source == SOURCE_USER:
+                await controller.start(enable_monitoring=False)
+                if (panel_info := controller.state.panel_info) and panel_info.model:
+                    self._model_name = panel_info.model.name
         except SatelPanelBusyError:
             errors["base"] = "panel_busy"
         except SatelConnectionInitializationError:
