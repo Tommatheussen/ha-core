@@ -1,5 +1,6 @@
 """Test the satel integra config flow."""
 
+from dataclasses import replace
 from typing import Any
 from unittest.mock import AsyncMock, MagicMock
 
@@ -47,6 +48,36 @@ from . import (
 )
 
 
+@pytest.mark.parametrize("panel_metadata", ["unknown", "missing"])
+async def test_setup_title_falls_back_to_host(
+    hass: HomeAssistant,
+    mock_satel: AsyncMock,
+    mock_setup_entry: AsyncMock,
+    panel_metadata: str,
+) -> None:
+    """Use the host as the title when the panel model cannot be determined."""
+    mock_satel.read_panel_info.return_value = (
+        replace(mock_satel.read_panel_info.return_value, type_code=99, model=None)
+        if panel_metadata == "unknown"
+        else None
+    )
+
+    result = await hass.config_entries.flow.async_init(
+        DOMAIN, context={"source": SOURCE_USER}
+    )
+    assert result["type"] is FlowResultType.FORM
+    assert result["step_id"] == "user"
+
+    result = await hass.config_entries.flow.async_configure(
+        result["flow_id"], MOCK_CONFIG_DATA
+    )
+    assert result["type"] is FlowResultType.CREATE_ENTRY
+    assert result["title"] == MOCK_CONFIG_DATA[CONF_HOST]
+
+    await hass.config_entries.options.async_configure(result["next_flow"][1], {})
+    await hass.async_block_till_done()
+
+
 @pytest.mark.parametrize(
     ("user_input_connection", "user_input_code", "entry_data", "entry_options"),
     [
@@ -91,7 +122,7 @@ async def test_setup_flow(
         user_input_connection,
     )
     assert result["type"] is FlowResultType.CREATE_ENTRY
-    assert result["title"] == MOCK_CONFIG_DATA[CONF_HOST]
+    assert result["title"] == "INTEGRA 64"
     assert result["data"] == entry_data
     assert result["options"] == {}
 
@@ -118,21 +149,23 @@ async def test_setup_flow(
         (Exception, "unknown"),
     ],
 )
+@pytest.mark.parametrize("failure_method", ["connect", "start"])
 async def test_setup_connection_failed(
     hass: HomeAssistant,
     mock_satel: AsyncMock,
     mock_setup_entry: AsyncMock,
     exception: Exception,
     error: str,
+    failure_method: str,
 ) -> None:
-    """Test the setup flow when connection fails."""
+    """Test the setup flow when connecting or initializing fails."""
     user_input = MOCK_CONFIG_DATA
 
     result = await hass.config_entries.flow.async_init(
         DOMAIN, context={"source": SOURCE_USER}
     )
 
-    mock_satel.connect.side_effect = exception
+    getattr(mock_satel, failure_method).side_effect = exception
 
     result = await hass.config_entries.flow.async_configure(
         result["flow_id"],
@@ -141,8 +174,9 @@ async def test_setup_connection_failed(
 
     assert result["type"] is FlowResultType.FORM
     assert result["errors"] == {"base": error}
+    mock_satel.close.assert_awaited_once()
 
-    mock_satel.connect.side_effect = None
+    getattr(mock_satel, failure_method).side_effect = None
 
     result = await hass.config_entries.flow.async_configure(
         result["flow_id"],

@@ -22,7 +22,7 @@
     'manufacturer': 'Satel',
     'model': 'INTEGRA 64',
     'model_id': None,
-    'name': '192.168.0.2',
+    'name': 'INTEGRA 64',
     'name_by_user': None,
     'serial_number': None,
     'sw_version': '1.24 (2025-03-12)',

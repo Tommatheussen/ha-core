@@ -126,7 +126,7 @@ def mock_config_entry() -> MockConfigEntry:
     """Mock satel configuration entry."""
     return MockConfigEntry(
         domain=DOMAIN,
-        title="192.168.0.2",
+        title="INTEGRA 64",
         data=MOCK_CONFIG_DATA,
         options=MOCK_CONFIG_OPTIONS,
         entry_id=MOCK_ENTRY_ID,

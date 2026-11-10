@@ -1,5 +1,5 @@
 # serializer version: 1
-# name: test_binary_sensors[binary_sensor.192_168_0_2_dt1_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_dt1_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -13,7 +13,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_dt1_trouble',
+    'entity_id': 'binary_sensor.integra_64_dt1_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -36,21 +36,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_dt1_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_dt1_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 DT1 trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 DT1 trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_dt1_trouble',
+    'entity_id': 'binary_sensor.integra_64_dt1_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_dt2_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_dt2_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -64,7 +64,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_dt2_trouble',
+    'entity_id': 'binary_sensor.integra_64_dt2_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -87,21 +87,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_dt2_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_dt2_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 DT2 trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 DT2 trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_dt2_trouble',
+    'entity_id': 'binary_sensor.integra_64_dt2_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_dtm_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_dtm_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -115,7 +115,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_dtm_trouble',
+    'entity_id': 'binary_sensor.integra_64_dtm_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -138,21 +138,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_dtm_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_dtm_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 DTM trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 DTM trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_dtm_trouble',
+    'entity_id': 'binary_sensor.integra_64_dtm_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_eeprom_or_rtc_access_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_eeprom_or_rtc_access_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -166,7 +166,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_eeprom_or_rtc_access_trouble',
+    'entity_id': 'binary_sensor.integra_64_eeprom_or_rtc_access_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -189,21 +189,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_eeprom_or_rtc_access_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_eeprom_or_rtc_access_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 EEPROM or RTC access trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 EEPROM or RTC access trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_eeprom_or_rtc_access_trouble',
+    'entity_id': 'binary_sensor.integra_64_eeprom_or_rtc_access_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_expander_power_supply_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_expander_power_supply_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -217,7 +217,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_expander_power_supply_trouble',
+    'entity_id': 'binary_sensor.integra_64_expander_power_supply_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -240,21 +240,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_expander_power_supply_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_expander_power_supply_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Expander power supply trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Expander power supply trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_expander_power_supply_trouble',
+    'entity_id': 'binary_sensor.integra_64_expander_power_supply_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_external_device_dtr_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_external_device_dtr_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -268,7 +268,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_external_device_dtr_trouble',
+    'entity_id': 'binary_sensor.integra_64_external_device_dtr_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -291,21 +291,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_external_device_dtr_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_external_device_dtr_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 External device DTR trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 External device DTR trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_external_device_dtr_trouble',
+    'entity_id': 'binary_sensor.integra_64_external_device_dtr_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_external_modem_command_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_external_modem_command_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -319,7 +319,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_external_modem_command_trouble',
+    'entity_id': 'binary_sensor.integra_64_external_modem_command_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -342,21 +342,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_external_modem_command_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_external_modem_command_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 External modem command trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 External modem command trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_external_modem_command_trouble',
+    'entity_id': 'binary_sensor.integra_64_external_modem_command_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_external_modem_initialization_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_external_modem_initialization_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -370,7 +370,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_external_modem_initialization_trouble',
+    'entity_id': 'binary_sensor.integra_64_external_modem_initialization_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -393,21 +393,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_external_modem_initialization_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_external_modem_initialization_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 External modem initialization trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 External modem initialization trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_external_modem_initialization_trouble',
+    'entity_id': 'binary_sensor.integra_64_external_modem_initialization_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_keypad_power_supply_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_keypad_power_supply_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -421,7 +421,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_keypad_power_supply_trouble',
+    'entity_id': 'binary_sensor.integra_64_keypad_power_supply_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -444,21 +444,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_keypad_power_supply_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_keypad_power_supply_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Keypad power supply trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Keypad power supply trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_keypad_power_supply_trouble',
+    'entity_id': 'binary_sensor.integra_64_keypad_power_supply_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_monitoring_station_1_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_monitoring_station_1_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -472,7 +472,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_monitoring_station_1_trouble',
+    'entity_id': 'binary_sensor.integra_64_monitoring_station_1_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -495,21 +495,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_monitoring_station_1_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_monitoring_station_1_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Monitoring station 1 trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Monitoring station 1 trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_monitoring_station_1_trouble',
+    'entity_id': 'binary_sensor.integra_64_monitoring_station_1_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_monitoring_station_2_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_monitoring_station_2_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -523,7 +523,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_monitoring_station_2_trouble',
+    'entity_id': 'binary_sensor.integra_64_monitoring_station_2_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -546,21 +546,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_monitoring_station_2_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_monitoring_station_2_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Monitoring station 2 trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Monitoring station 2 trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_monitoring_station_2_trouble',
+    'entity_id': 'binary_sensor.integra_64_monitoring_station_2_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_output_1_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_output_1_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -574,7 +574,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_output_1_trouble',
+    'entity_id': 'binary_sensor.integra_64_output_1_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -597,21 +597,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_output_1_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_output_1_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Output 1 trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Output 1 trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_output_1_trouble',
+    'entity_id': 'binary_sensor.integra_64_output_1_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_output_2_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_output_2_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -625,7 +625,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_output_2_trouble',
+    'entity_id': 'binary_sensor.integra_64_output_2_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -648,21 +648,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_output_2_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_output_2_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Output 2 trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Output 2 trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_output_2_trouble',
+    'entity_id': 'binary_sensor.integra_64_output_2_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_output_3_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_output_3_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -676,7 +676,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_output_3_trouble',
+    'entity_id': 'binary_sensor.integra_64_output_3_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -699,21 +699,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_output_3_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_output_3_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Output 3 trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Output 3 trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_output_3_trouble',
+    'entity_id': 'binary_sensor.integra_64_output_3_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_output_4_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_output_4_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -727,7 +727,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_output_4_trouble',
+    'entity_id': 'binary_sensor.integra_64_output_4_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -750,21 +750,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_output_4_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_output_4_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Output 4 trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Output 4 trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_output_4_trouble',
+    'entity_id': 'binary_sensor.integra_64_output_4_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_panel_ac_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_panel_ac_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -778,7 +778,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_panel_ac_trouble',
+    'entity_id': 'binary_sensor.integra_64_panel_ac_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -801,21 +801,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_panel_ac_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_panel_ac_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Panel AC trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Panel AC trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_panel_ac_trouble',
+    'entity_id': 'binary_sensor.integra_64_panel_ac_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_panel_battery_missing-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_panel_battery_missing-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -829,7 +829,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_panel_battery_missing',
+    'entity_id': 'binary_sensor.integra_64_panel_battery_missing',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -852,21 +852,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_panel_battery_missing-state]
+# name: test_binary_sensors[binary_sensor.integra_64_panel_battery_missing-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Panel battery missing',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Panel battery missing',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_panel_battery_missing',
+    'entity_id': 'binary_sensor.integra_64_panel_battery_missing',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_panel_battery_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_panel_battery_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -880,7 +880,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_panel_battery_trouble',
+    'entity_id': 'binary_sensor.integra_64_panel_battery_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -903,21 +903,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_panel_battery_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_panel_battery_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Panel battery trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Panel battery trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_panel_battery_trouble',
+    'entity_id': 'binary_sensor.integra_64_panel_battery_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_panel_restart_memory_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_panel_restart_memory_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -931,7 +931,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_panel_restart_memory_trouble',
+    'entity_id': 'binary_sensor.integra_64_panel_restart_memory_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -954,21 +954,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_panel_restart_memory_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_panel_restart_memory_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Panel restart memory trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Panel restart memory trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_panel_restart_memory_trouble',
+    'entity_id': 'binary_sensor.integra_64_panel_restart_memory_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_ram_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_ram_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -982,7 +982,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_ram_trouble',
+    'entity_id': 'binary_sensor.integra_64_ram_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -1005,21 +1005,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_ram_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_ram_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 RAM trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 RAM trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_ram_trouble',
+    'entity_id': 'binary_sensor.integra_64_ram_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_rtc_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_rtc_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -1033,7 +1033,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_rtc_trouble',
+    'entity_id': 'binary_sensor.integra_64_rtc_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -1056,21 +1056,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_rtc_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_rtc_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 RTC trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 RTC trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_rtc_trouble',
+    'entity_id': 'binary_sensor.integra_64_rtc_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_service_mode-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_service_mode-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -1084,7 +1084,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_service_mode',
+    'entity_id': 'binary_sensor.integra_64_service_mode',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -1107,20 +1107,20 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_service_mode-state]
+# name: test_binary_sensors[binary_sensor.integra_64_service_mode-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Service mode',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Service mode',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_service_mode',
+    'entity_id': 'binary_sensor.integra_64_service_mode',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_system_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_system_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -1134,7 +1134,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_system_trouble',
+    'entity_id': 'binary_sensor.integra_64_system_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -1157,21 +1157,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_system_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_system_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 System trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 System trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_system_trouble',
+    'entity_id': 'binary_sensor.integra_64_system_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_telephone_line_bad_signal_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_telephone_line_bad_signal_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -1185,7 +1185,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_telephone_line_bad_signal_trouble',
+    'entity_id': 'binary_sensor.integra_64_telephone_line_bad_signal_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -1208,21 +1208,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_telephone_line_bad_signal_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_telephone_line_bad_signal_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Telephone line bad signal trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Telephone line bad signal trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_telephone_line_bad_signal_trouble',
+    'entity_id': 'binary_sensor.integra_64_telephone_line_bad_signal_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_telephone_line_no_signal_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_telephone_line_no_signal_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -1236,7 +1236,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_telephone_line_no_signal_trouble',
+    'entity_id': 'binary_sensor.integra_64_telephone_line_no_signal_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -1259,21 +1259,21 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_telephone_line_no_signal_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_telephone_line_no_signal_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Telephone line no signal trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Telephone line no signal trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_telephone_line_no_signal_trouble',
+    'entity_id': 'binary_sensor.integra_64_telephone_line_no_signal_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
     'state': 'off',
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_telephone_line_voltage_or_auxiliary_processor_trouble-entry]
+# name: test_binary_sensors[binary_sensor.integra_64_telephone_line_voltage_or_auxiliary_processor_trouble-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
       None,
@@ -1287,7 +1287,7 @@
     'disabled_by': None,
     'domain': 'binary_sensor',
     'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
-    'entity_id': 'binary_sensor.192_168_0_2_telephone_line_voltage_or_auxiliary_processor_trouble',
+    'entity_id': 'binary_sensor.integra_64_telephone_line_voltage_or_auxiliary_processor_trouble',
     'has_entity_name': True,
     'hidden_by': None,
     'icon': None,
@@ -1310,14 +1310,14 @@
     'unit_of_measurement': None,
   })
 # ---
-# name: test_binary_sensors[binary_sensor.192_168_0_2_telephone_line_voltage_or_auxiliary_processor_trouble-state]
+# name: test_binary_sensors[binary_sensor.integra_64_telephone_line_voltage_or_auxiliary_processor_trouble-state]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       <EntityStateAttribute.DEVICE_CLASS: 'device_class'>: 'problem',
-      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: '192.168.0.2 Telephone line voltage or auxiliary processor trouble',
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'INTEGRA 64 Telephone line voltage or auxiliary processor trouble',
     }),
     'context': <ANY>,
-    'entity_id': 'binary_sensor.192_168_0_2_telephone_line_voltage_or_auxiliary_processor_trouble',
+    'entity_id': 'binary_sensor.integra_64_telephone_line_voltage_or_auxiliary_processor_trouble',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
