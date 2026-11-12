@@ -631,8 +631,9 @@ async def test_reconfigure_flow_success(
     mock_setup_entry: AsyncMock,
     mock_config_entry: MockConfigEntry,
 ) -> None:
-    """Test that reconfigure updates host/port."""
+    """Test reconfigure updates host/port without changing the entry title."""
     mock_config_entry.add_to_hass(hass)
+    original_title = mock_config_entry.title
 
     result = await mock_config_entry.start_reconfigure_flow(hass)
 
@@ -655,6 +656,7 @@ async def test_reconfigure_flow_success(
         CONF_PORT: 4321,
         CONF_ENCRYPTION_KEY: None,
     }
+    assert mock_config_entry.title == original_title
 
     await hass.async_block_till_done()
     assert mock_setup_entry.call_count == 1

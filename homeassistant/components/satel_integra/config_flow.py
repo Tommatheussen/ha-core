@@ -247,7 +247,6 @@ class SatelConfigFlow(ConfigFlow, domain=DOMAIN):
                         CONF_PORT: normalized_input[CONF_PORT],
                         CONF_ENCRYPTION_KEY: normalized_input.get(CONF_ENCRYPTION_KEY),
                     },
-                    title=normalized_input[CONF_HOST],
                 )
 
         suggested_values: dict[str, Any] = {
